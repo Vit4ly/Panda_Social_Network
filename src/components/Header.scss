@@ -1,0 +1,11 @@
+@import 'NullStyle.scss';
+
+.header {
+  grid-area: h;
+  background-color: #61dafb;
+
+  &_img {
+    width: 70px;
+    margin: 10px 0 0 10px
+  }
+}

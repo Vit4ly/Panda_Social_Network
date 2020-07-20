@@ -1,0 +1,8 @@
+@import 'NullStyle.scss';
+.nav {
+  grid-area: n;
+  background-color: aqua;
+  &_item a {
+    color: #ffffff;
+  }
+}

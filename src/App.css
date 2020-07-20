@@ -50,24 +50,4 @@
    grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
 }
-.header {
-grid-area: h;
-  background-color: #61dafb;
-  height: 100px;
-}
-.img-header {
-  width: 70px;
-  margin: 10px 0 0 10px ;
-}
-.nav {
-  grid-area: n;
-  background-color: aqua;
-}
-.conetent {
-  grid-area: c;
-  background-color: aquamarine;
 
-}
-.started-main {
-  width: 100%;
-}
