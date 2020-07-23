@@ -2,16 +2,17 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import './';
-import Header from "./components/Header";
-import Navbar from "./components/NavBar";
-import Profile from "./components/Profile";
+import Header from "./components/Header/Header";
+import NavBar from "./components/NavBar/NavBar";
+import Profile from "./components/Profile/Profile";
+
 
 
 const App = () => {
   return (
     <div className={'app-wrapper'}>
        <Header/>
-        <Navbar/>
+        <NavBar/>
         <Profile/>
     </div>
   );

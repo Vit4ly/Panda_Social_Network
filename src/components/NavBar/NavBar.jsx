@@ -1,8 +1,8 @@
 import React from 'react';
-import  './NavBar.css';
+import './NavBar.css';
 
 
-const Navbar = () => {
+const NavBar = () => {
     return <nav className={'nav'}>
         <div className={'nav_item'}>
             <a href={''}>Profile</a>
@@ -22,4 +22,4 @@ const Navbar = () => {
     </nav>
 };
 
-export default Navbar;
+export default NavBar;
