@@ -5,10 +5,10 @@ import './NavBar.css';
 const NavBar = () => {
     return <nav className={'nav'}>
         <div className={'nav_item'}>
-            <a href={''}>Profile</a>
+            <a href={'/Profile'}>Profile</a>
         </div>
         <div className={'nav_item'}>
-            <a href={''}>Message</a>
+            <a href={'/Messages'}>Message</a>
         </div>
         <div className={'nav_item'}>
             <a href={''}>News</a>
