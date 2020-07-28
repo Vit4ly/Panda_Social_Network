@@ -1,1 +1,19 @@
 @import "../NullStyle";
+
+.messages {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  &_item {
+
+    .item{
+      &.active {
+        color: blue;
+      }
+    }
+  }
+&_window {
+  &_message {}
+}
+
+
+}

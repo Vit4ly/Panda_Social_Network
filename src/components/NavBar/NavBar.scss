@@ -3,7 +3,17 @@
 .nav {
   grid-area: n;
   background-color: aqua;
-  &_item a {
-    color: #ffffff;
+  padding: 20px;
+  &_item {
+    padding: 3px;
+    a {
+      &.active {
+      color: #1b669f;
+      }
+      &:active {
+      color: #1b669f;
+    }
+      color: #ffffff;
+    }
   }
 }

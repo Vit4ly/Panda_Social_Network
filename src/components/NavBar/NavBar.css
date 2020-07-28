@@ -76,9 +76,19 @@ h1, h2, h3, h4, h5, h6 {
 .nav {
   grid-area: n;
   background-color: aqua;
+  padding: 20px;
+}
+.nav_item {
+  padding: 3px;
 }
 .nav_item a {
   color: #ffffff;
+}
+.nav_item a.active {
+  color: #1b669f;
+}
+.nav_item a:active {
+  color: #1b669f;
 }
 
 /*# sourceMappingURL=NavBar.css.map */
