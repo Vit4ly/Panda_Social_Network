@@ -35,7 +35,7 @@ const Messages = (props) => {
                     Hi
                 </div>
                 <div className={'messages_message'}>
-                    How
+                    How are you
                 </div>
                 <div className={'messages_message'}>
                     HowdyHo
