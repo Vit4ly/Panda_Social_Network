@@ -1,1 +1,8 @@
 @import "../../NullStyle";
+
+.myPosts {
+  padding: 10px;
+  &_new {
+padding: 10px;
+  }
+}

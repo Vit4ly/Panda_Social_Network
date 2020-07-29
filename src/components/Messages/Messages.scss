@@ -3,17 +3,22 @@
 .messages {
   display: grid;
   grid-template-columns: 2fr 10fr;
+
   &_item {
 
-    .item{
+    .item {
       &.active {
         color: blue;
       }
     }
   }
-&_window {
-  &_message {}
+
+  &_window {
+    &_message {
+      padding: 10px;
+    }
+  }
 }
 
 
-}
+

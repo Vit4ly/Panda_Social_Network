@@ -3,43 +3,38 @@ import './Messages.css';
 import {NavLink} from "react-router-dom";
 
 
+const DialogsItem = (props) => {
+    let path = '/Messages/1' + props.id;
+    return (
+        <div className={'item'}>
+            <NavLink to={path} > { props.name } </NavLink>
+        </div>
+    )
+}
+
+const MessagesItem = (props) => {
+    return (
+        <div className={'messages_message'}>{props.message}</div>
+    )
+}
+
 const Messages = (props) => {
     return (
         <div className={'messages'}>
             <div className={'messages_item'}>
-
-                <div className={'item'}>
-                    <NavLink to={'/Dim'}> Dim </NavLink>
-                </div>
-
-                <div className={'item'}>
-                    <NavLink to={'/Vlad'}> Vlad </NavLink>
-                </div>
-
-                <div className={'item'}>
-                    <NavLink to={'/Roma'}> Roma </NavLink>
-                </div>
-
-                <div className={'item'}>
-                    <NavLink to={'/Sasha'}> Sasha </NavLink>
-                </div>
-
-                <div className={'item'}>
-                    <NavLink to={'/Anya'}> Anya </NavLink>
-                </div>
-
+                <DialogsItem name={'Dim'} id={'1'}/>
+                <DialogsItem name={'Vlad'} id={'2'}/>
+                <DialogsItem name={'Roma'} id={'3'}/>
+                <DialogsItem name={'Sasha'} id={'4'}/>
+                <DialogsItem name={'Anya'} id={'5'}/>
             </div>
 
             <div className={'messages_window'}>
-                <div className={'messages_message'}>
-                    Hi
-                </div>
-                <div className={'messages_message'}>
-                    How are you
-                </div>
-                <div className={'messages_message'}>
-                    How
-                </div>
+                <MessagesItem message={'hi'}/>
+                <MessagesItem message={'How are you'}/>
+                <MessagesItem message={'How are you'}/>
+                <MessagesItem message={'How'}/>
+                <MessagesItem message={'hi'}/>
             </div>
         </div>
     )

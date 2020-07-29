@@ -80,5 +80,8 @@ h1, h2, h3, h4, h5, h6 {
 .messages_item .item.active {
   color: blue;
 }
+.messages_window_message {
+  padding: 10px;
+}
 
 /*# sourceMappingURL=Messages.css.map */

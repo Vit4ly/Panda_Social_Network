@@ -3,11 +3,15 @@ import './MyPosts.css';
 import Posts from "./Posts/Posts";
 
 const MyPosts = () => {
-    return <div>
+    return <div className={'myPosts'}>
         <div>
-            My posts
+            <h3>My posts</h3>
+            <div>
+                <textarea></textarea>
+                <button>Send</button>
+            </div>
         </div>
-        <div className={'MyPosts_new'}>
+        <div className={'myPosts_new'}>
             <Posts message={'Hi, how are you'} likesCount={0}/>
             <Posts message={'it\'s my first post'} likesCount={23}/>
         </div>
