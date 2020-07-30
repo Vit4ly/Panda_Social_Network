@@ -31,6 +31,7 @@ const Messages = (props) => {
     return (
         <div className={'messages'}>
             <div className={'messages_item'}>
+                Gh
                 {dialogElements}
             </div>
 
