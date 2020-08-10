@@ -17,7 +17,6 @@ const Messages = (props) => {
             <div className={'messages_window'}>
                 {messagesElement}
             </div>
-
         </div>
     )
 };
