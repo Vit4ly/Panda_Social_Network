@@ -19,16 +19,15 @@ import Route from "react-router-dom/es/Route";
 const App = (props) => {
 
     return (
-        <BrowserRouter>
+
             <div className={'app-wrapper'}>
                 <Header/>
                 <NavBar/>
                 <div className={'app_wrapper_content'}>
                     {/*<Route path={'/Profile'} component={Profile}/>*/}
                     {/*<Route path={'/Messages'} component={Messages}/>*/}
-                    <Route path={'/Profile'} render={() => <Profile posts={props.posts}/>}/>
-                    <Route path={'/Messages'} render={() => <Messages dialogs={props.dialogs}
-                                                                      messagesData={props.messagesData}/>}/>
+                    <Route path={'/Profile'} render={() => <Profile state={props.state.profilePage}/>}/>
+                    <Route path={'/Messages'} render={() => <Messages state={props.state.messagesPage}/>}/>
 
 
                     <Route path={'/News'} render={() => <News />}/>
@@ -36,7 +35,7 @@ const App = (props) => {
                     <Route path={'/Settings'} render={() => <Settings />}/>
                 </div>
             </div>
-        </BrowserRouter>
+
     );
 }
 
