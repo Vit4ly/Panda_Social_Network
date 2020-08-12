@@ -1,4 +1,5 @@
 import React from "react";
+import {rerenderEntireTree} from "../../render";
 
 
 let state = {
@@ -7,6 +8,7 @@ let state = {
             {id: 1, message: 'Hi, how are you', likesCount: 12},
             {id: 2, message: 'it\'s my first post', likesCount: 12},
         ],
+        newPostText: 'Hello'
 
     },
     messagesPage: {
@@ -26,5 +28,18 @@ let state = {
         ],
     }
 }
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        message: postMessage,
+        likesCount: 0
+    };
+    state.profilePage.posts.push(newPost);
+    rerenderEntireTree(state)
+}
 
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state)
+}
 export default state;
