@@ -5,10 +5,12 @@ import Posts from "./Posts/Posts";
 const MyPosts = (props) => {
 const postsElement = props.posts.map(p => <Posts message={p.message} likesCount={p.likesCount}/>)
     let newPostElement = React.createRef()
+
     let addPost = () => {
-    let text = newPostElement.current.value;
-        props.addPost(text);
-        newPostElement.current.value = '';
+    // let text = newPostElement.current.value;
+        props.addPost();
+        // newPostElement.current.value = '';
+        props.updateNewPostText('')
     };
 
 const onPostChange = () => {
@@ -20,7 +22,7 @@ const onPostChange = () => {
         <div>
             <h3>My posts</h3>
             <div>
-                <textarea onPostChange={onPostChange}
+                <textarea onChange={onPostChange}
                           ref={newPostElement}
                           value={props.newPostText}/>
                 <button onClick={ addPost }>Send</button>
